@@ -14,7 +14,7 @@ def chat():
     user_message = request.json.get('message')
 
     try:
-        openai.api_key = "sk-proj-ZFishUGKYz9wsAEYMewjT3BlbkFJpRaqtoDCNsDYAwZil0Ct"
+        openai.api_key = "openapikey"
         response = openai.Completion.create(
             model="gpt-3.5-turbo-instruct",
             prompt=f"User: {user_message}\nBot:",
